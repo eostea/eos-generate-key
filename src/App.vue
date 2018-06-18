@@ -91,16 +91,16 @@ export default {
       this.showDialog = false
     },
     getPrivateKey () {
-      this.show = true
       ecc.randomKey().then(privateKey => {
         this.privateKey = privateKey.toString()
         this.publicKey = ecc.privateToPublic(this.privateKey)
+        this.show = true
       })
     },
     getPrivateKeyBySeed () {
-      this.showSeed = true
       this.privateKeyBySeed = ecc.seedPrivate(this.seed)
       this.publicKeyBySeed = ecc.privateToPublic(this.privateKeyBySeed)
+      this.showSeed = true
     },
     isValidPublic () {
       this.showPublicTips = true
@@ -122,6 +122,11 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 20px;
+}
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 input[type='text'] {
