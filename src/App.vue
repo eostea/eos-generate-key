@@ -6,16 +6,17 @@
       <p><span>私钥：</span>{{ privateKey }}</p>
       <p><span>公钥：</span>{{ publicKey }}</p>
     </div>
-
+    <hr>
     <div style="margin-top: 40px;">
-      <button class="primary" @click="getPrivateKey">一键生成私钥/公钥</button>
+      <button class="primary" @click="getPrivateKey">一键生成私钥/公钥（随机生成）</button>
       <p>通过一键生成私钥和公钥，<span style="color:orange;">同时请注意保管好自己的私钥</span></p>
     </div>
-
+    <hr>
     <div style="margin-top: 40px;">
       <input type="text" v-model="seed">
-      <button class="primary" @click="getPrivateKeyBySeed">通过助记词，获取私钥</button>
-      <p>助记词: 应该使用至少128个随机位来产生一个好的私钥，<span style="color:orange;">同时请注意保管好助记词</span></p>
+      <button class="primary" @click="getPrivateKeyBySeed">通过助记词，获取私钥（生成固定私钥）</button>
+      <p>可以输入一个固定的字符串，生成一个固定的私钥/公钥。</p>
+      <p>助记词: 应该是使用至少128个随机位来产生一个好的私钥，<span style="color:orange;">同时请注意保管好助记词</span></p>
     </div>
 
     <div style="margin-top: 20px;">
