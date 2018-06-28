@@ -2028,9 +2028,9 @@ entities@~1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/entities/-/entities-1.1.1.tgz#6e5c2d0a5621b5dadaecef80b90edfb5cd7772f0"
 
-eosjs-ecc@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/eosjs-ecc/-/eosjs-ecc-2.0.1.tgz#b651efae2bfe5860cb08e362c5bb45de4f2e2eda"
+eosjs-ecc@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/eosjs-ecc/-/eosjs-ecc-4.0.2.tgz#89b2fc019b2632ef294b94d4f34dbd540da9763c"
   dependencies:
     bigi "^1.4.2"
     browserify-aes "^1.0.6"

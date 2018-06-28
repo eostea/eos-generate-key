@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "eosjs-ecc": "^2.0.1",
+    "eosjs-ecc": "^4.0.2",
     "vue": "^2.5.2"
   },
   "devDependencies": {
