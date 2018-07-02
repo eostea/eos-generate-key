@@ -12,12 +12,12 @@
       <p>通过一键生成私钥和公钥，<span style="color:orange;">同时请注意保管好自己的私钥</span></p>
     </div>
     <hr>
-    <div v-show="showSeed">
+    <div style="display: none;">
       <h3>通过助记词生成私钥</h3>
       <p><span>私钥：</span>{{ privateKeyBySeed }}</p>
       <p><span>公钥：</span>{{ publicKeyBySeed }}</p>
     </div>
-    <div style="margin-top: 40px;">
+    <div style="margin-top: 40px;display: none;">
       <input type="text" v-model="seed">
       <button class="primary" @click="showDialog = true">通过助记词，获取私钥（生成固定私钥）</button>
       <p>可以输入一个固定的字符串，生成一个固定的私钥/公钥。</p>
@@ -68,7 +68,7 @@ export default {
   data () {
     return {
       show: false,
-      showSeed: false,
+      showSeed: true,
       publicKey: '',
       privateKey: '',
       publicKeyBySeed: '',
